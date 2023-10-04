@@ -1,0 +1,128 @@
+/* Basic Navbar Styles */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+   
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.menu-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: darkgrey;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.menu-links a:hover {
+    color: black;
+}
+
+.services {
+    position: relative;
+}
+
+.services-sub {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid darkgrey;
+    list-style-type: none;
+    padding: 0;
+}
+
+.services-sub li a {
+    display: block;
+    padding: 5px 10px;
+}
+
+.services:hover .services-sub {
+    display: block;
+}
+
+.btn-link button {
+    margin-left: 10px;
+    padding: 5px 15px;
+    border: none;
+    background-color: transparent;
+    color: #716e6e;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    border: 1px solid;
+  
+}
+
+.btn-link button:hover {
+    background-color: #F1F5F5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 10px 0;
+    }
+
+    .menu-links.active {
+        display: flex;
+        background: #f4f2f2;
+        border-top: 1px solid #c5c0c0;
+        border-bottom: 1px solid #c5c0c0;
+    }
+
+    .services-sub {
+        position: static;
+        margin-top: 10px;
+    }
+}

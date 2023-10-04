@@ -1,0 +1,48 @@
+.communication-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.banner-image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.title-header-communication {
+  font-size: 2rem;
+  margin-top: -33px;
+  background: #F8F9F9;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.info-text-communication {
+  font-size: 1rem;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: left;  
+}
+
+.h1-head-comp {
+  text-align: center;
+  margin-top: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .title-header {
+    font-size: 1.5rem;
+  }
+  
+  .info-text-culture {
+    font-size: 1rem;
+  }
+}

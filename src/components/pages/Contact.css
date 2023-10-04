@@ -1,0 +1,92 @@
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid gainsboro;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .contact-form button {
+    align-self: center;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Add this line to make the button full width */
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .confirmation-message {
+    margin-top: 10px;
+    color: green;
+    font-size: 16px;
+  }
+
+
+  .confirmation-message {
+    margin-top: 10px;
+    color: green;
+    font-size: 16px;
+    background: gainsboro;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 600px) {
+    .contact-form {
+      max-width: 90%;
+    }
+  }
+  

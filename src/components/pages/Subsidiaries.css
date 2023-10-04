@@ -1,0 +1,76 @@
+/* Style for the container of subsidiary items */
+.subsidiaries-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .subsidiary-item {
+    width: calc(33.33% - 20px); /* Adjusted width for 3 columns */
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style for subsidiary logos */
+  .subsidiary-logo {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto 10px;
+  }
+  
+  /* Style for subsidiary titles */
+  .subsidiary-title {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  /* Style for subsidiary descriptions */
+  .subsidiary-description {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .subsidiary-title {
+    font-size: 1.2rem;
+    margin: 0;
+    display: none;
+  }
+
+  .subsidiaries-header-h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+
+  .subsidiary-logo {
+    max-width: 100px;
+    height: auto;
+    margin: 0 auto 10px;
+    margin-bottom: -19px;
+  
+  
+
+
+
+
+
+}
+
+
+
+
+  
+  /* Media query for tablets and smaller screens */
+  @media screen and (max-width: 768px) {
+    .subsidiary-item {
+      width: calc(100% - 20px);
+    }
+  }
+  

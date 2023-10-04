@@ -1,0 +1,69 @@
+.insight-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+  
+  .grid-item {
+    flex: 1 1 calc(33.33% - 20px); /* Account for the gap */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .grid-item img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  .insight-page {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .read-more-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF; /* Change to your desired color */
+    text-decoration: none;
+}
+
+.read-more-link:hover {
+    text-decoration: underline;
+}
+
+
+.insigt-heading {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: -25px;
+  text-align: center;
+}
+
+
+
+  
+  @media (max-width: 768px) {
+    .grid-item {
+      flex: 1 1 100%;
+    }
+  }
+  

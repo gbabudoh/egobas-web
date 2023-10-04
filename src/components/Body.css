@@ -1,0 +1,115 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100vw; /* Set container width to viewport width */
+  overflow: hidden; /* Prevent any child elements from overflowing */
+ 
+}
+
+
+/* Banner styles */
+.banner img {
+  width: 100%; /* Image will take up the full container width */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any default spacing around the image */
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 0; /* Remove rounded corners to fit edge-to-edge */
+  box-shadow: none; /* Remove shadow for a full-width appearance */
+}
+
+
+.text-content {
+  margin: 20px 0;
+  text-align: left;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Card styles */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows the cards to wrap to the next line on smaller screens */
+  gap: 20px; /* Space between cards */
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px); /* Each card takes up roughly a third of the container width, minus the gap */
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Adds a subtle lift effect on hover */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+ 
+}
+
+.card p {
+  padding: 0px;
+  font-size: 16px;
+  color: #555;  
+  text-align: left;
+}
+
+.card {
+  background-color: white;
+}
+
+.h1class {
+  font-size: 30px;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+
+.headliner {
+  font-size: 35px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.headliner2 {
+  margin-top: -18px;
+  margin-bottom: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card {
+  text-decoration: none;  /* Removes underline from anchor tags */
+  color: inherit;         /* Inherits the color from its parent, this ensures that the link doesn't get the typical blue color of anchor tags */
+}
+
+.card:hover {
+  text-decoration: none;  /* Ensure underline doesn't appear on hover */
+}
+
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .card-container {
+    justify-content: center;
+  }
+
+  .card {
+    flex: 0 0 90%; /* On smaller screens, cards take up 90% of the container width */
+  }
+}
